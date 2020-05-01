@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<style>
+    /* body {
+        display: flex;
+
+    }
+
+    div {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid red;
+
+    }
+
+    input {
+        padding: 10px;
+    } */
+    #wrap {
+        position: relative;
+        height: 20px;
+
+
+
+    }
+
+    #taskSpan {
+        position: absolute;
+        border: 2px solid red;
+        padding: 5px;
+    }
+
+    #taskInput {
+        display: none;
+        width: 250px;
+
+    }
+
+    #input {
+        margin-bottom: 10px;
+        width: 150px;
+        height: 25px;
+        padding-left: 10px;
+    }
+
+    #inputValue {
+        width: 150px;
+        height: 25px;
+        border: 2px solid red;
+        padding-left: 10px;
+    }
+
+    #modalBG {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: red;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #modalWindow {
+        width: 400px;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 20px;
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+
+    <!-- <div id="elem1" onclick="alert('Elem 1')">Click</div>
+    <div id="elem2">Context menu</div>
+    <div id="elem3">Mouse on</div>
+    <div id="elem4">Mouse out</div>
+    <input id="elem5" value="Focus">
+    <div id="elem6" style="display : none">Elem 6</div>
+    <div id="elem7"></div> -->
+    <p>Task 1</p>
+    <span id="help">Press Alt+a</span>
+    <br>
+    <div id="wrap">
+        <span id="taskSpan">Очікую ввід даних</span>
+        <input type="text" id="taskInput">
+
+    </div>
+    <br>
+
+    <p>Task 2</p>
+    <div id="currentWidth"></div>
+    <br>
+    <p>Task 3</p>
+    <input id="input" placeholder="Input some text" type="text">
+    <br>
+    <div id="inputValue">Result here</div>
+    <br>
+    <p>Task 4</p>
+    <span id="showModal">Press "Alt + o" to show modal window </span>
+    <div id="modalBG">
+        <div id="modalWindow">
+            <div id="modalMessage">Press"Alt + c to close modal window"</div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
